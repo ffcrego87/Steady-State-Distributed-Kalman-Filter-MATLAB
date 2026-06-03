@@ -2,7 +2,7 @@ function Pi = metropolis( Adj )
 %metropolis Computes a consensus matrix with metropolis weights with
 %sparsity given by the symmetric adjacency matrix Adj.
 
-n = size(Adj); % number of nodes
+n = size(Adj,1); % number of nodes
 d = sum(Adj);  % node degree
 
 Pi = zeros(n);
@@ -18,4 +18,3 @@ for i = 1:n
 end
 
 end
-
